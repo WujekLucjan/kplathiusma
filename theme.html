@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Larthi’usma Kre’liyas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link id="favicon" rel="icon" href="img/moon_black.png" />
+</head>
+<canvas id="ashParticles" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;"></canvas>
+<div id="rose-container"></div>
+<body>
+  <div class="moon-switcher">
+    <img src="img/moon_white.png" alt="Motyw biały" onclick="changeTheme('white')" />
+    <img src="img/moon_red.png" alt="Motyw czerwony" onclick="changeTheme('red')" />
+    <img src="img/moon_black.png" alt="Motyw czarny" onclick="changeTheme('black')" />
+  </div>
+
+  <div class="content-box">
+    <h1>Theme</h1>
+    <div class="info-block">
+      <p><strong>Motywy muzyczne postaci:</strong></p>
+
+      <div class="audio-block" data-src="music/louna_mama.mp3" data-yt="https://www.youtube.com/watch?v=s-l53Y4330I">
+        <p class="audio-title">1. LOUNA - Мама</p>
+        <div class="player">
+          <button class="btn-playpause" aria-label="Play/Pause">&#9658;</button>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <div class="time">0:00</div>
+        </div>
+        <p class="yt-link" style="text-align: left; margin-top: 5px;">
+          <a href="https://www.youtube.com/watch?v=s-l53Y4330I" target="_blank" rel="noopener noreferrer">Link</a>
+        </p>
+      </div>
+
+      <div class="audio-block" data-src="music/dwa.mp3" data-yt="https://www.youtube.com/watch?v=xGn33e4sAEU">
+        <p class="audio-title">2. СЛОТ - Ангел или демон</p>
+        <div class="player">
+          <button class="btn-playpause" aria-label="Play/Pause">&#9658;</button>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <div class="time">0:00</div>
+        </div>
+        <p class="yt-link" style="text-align: left; margin-top: 5px;">
+          <a href="https://www.youtube.com/watch?v=xGn33e4sAEU" target="_blank" rel="noopener noreferrer">Link</a>
+        </p>
+      </div>
+
+      <div class="audio-block" data-src="music/trzy.mp3" data-yt="https://www.youtube.com/watch?v=EziHx_07vX0s">
+        <p class="audio-title">3. STIGMATA - СЕНТЯБРЬ</p>
+        <div class="player">
+          <button class="btn-playpause" aria-label="Play/Pause">&#9658;</button>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <div class="time">0:00</div>
+        </div>
+        <p class="yt-link" style="text-align: left; margin-top: 5px;">
+          <a href="https://www.youtube.com/watch?v=EziHx_07vX0s" target="_blank" rel="noopener noreferrer">Link</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="index.html">⟵ Powrót</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

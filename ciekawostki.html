@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larthi’usma Kre’liyas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="img/moon_black.png" />
+</head>
+<body>
+  <div class="moon-switcher">
+    <img src="img/moon_white.png" alt="Motyw biały" onclick="changeTheme('white')" />
+    <img src="img/moon_red.png" alt="Motyw czerwony" onclick="changeTheme('red')" />
+    <img src="img/moon_black.png" alt="Motyw czarny" onclick="changeTheme('black')" />
+  </div>
+  <canvas id="ashParticles" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;"></canvas>
+  <div id="rose-container"></div>
+
+  <div class="content-box">
+    <h1>Ciekawostki</h1>
+    <div class="info-block">
+      <ul class="facts-list">
+        <li>
+          Symbol róży zdobi jej broń oraz osobiste dodatki. To nie tylko estetyka – róża jest kwiatem, który przypomina jej zaginioną bratnią duszę. Każdy płatek to wspomnienie, każdy kolec – ból straty.
+        </li>
+        <li>
+          Nigdy nie zdejmuje czerni. To nie moda, to żałoba, którą nosi jak drugą skórę. Żałoba, która nie przemija, bo rana nigdy się nie zabliźniła.
+        </li>
+        <li>
+          Część jej włosów spleciona jest w jeden, ciężki warkocz, którego – zgodnie z dawnym rytuałem – nie wolno rozplatać nikomu, poza jej przyszłym mężem. Dopóki warkocz nie zostanie rozwiązany, jej serce pozostaje zamknięte.
+        </li>
+        <li>
+          Ulubiony kolor? Ten, który przypomina krew. Nasycony, głęboki karmin – nie dla dramatyzmu, ale dlatego, że tylko ten odcień wydaje jej się naprawdę żywy.
+        </li>
+        <li>
+          Czarne papierosy są jej stałym towarzyszem. Pali nie po to, by zapomnieć, lecz by pamiętać – każdy dymny ślad to jak modlitwa złożona z popiołu.
+          <div class="image-container">
+            <img src="img/szlugi.png" alt="Czarne papierosy" class="highlighted-img" />
+          </div>
+        </li>
+        <li>
+          Zna sztukę haftu – nauczyła się jej, by przetrwać samotność. Jej ubrania i dodatki noszą ślady tej cierpliwej pracy: czerwone nici wplecione w czerń, znaki, których nikt poza nią nie rozumie.
+        </li>
+        <li>
+          Jej ciało to mapa blizn, jednak większość z nich ukryta jest pod warstwami tkanin. Jedna z nich zdradza przeszłość – blizna przechodząca przez oko, zakryta opaską.
+        </li>
+        <li>
+          Jej paznokcie to małe dzieła sztuki: górna część zawsze w czerni, dolna – krwista czerwień.
+        </li>
+      </ul>
+    </div>
+
+    <div class="back-button">
+      <a href="index.html">⟵ Powrót</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

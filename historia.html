@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larthi’usma Kre’liyas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link id="favicon" rel="icon" href="img/moon_black.png" />
+
+</head>
+<canvas id="ashParticles" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;"></canvas>
+<div id="rose-container"></div>
+<body>
+  <div class="moon-switcher">
+    <img src="img/moon_white.png" alt="Motyw biały" onclick="changeTheme('white')" />
+    <img src="img/moon_red.png" alt="Motyw czerwony" onclick="changeTheme('red')" />
+    <img src="img/moon_black.png" alt="Motyw czarny" onclick="changeTheme('black')" />
+  </div>
+
+  <div class="content-box">
+    <h1>Historia</h1>
+
+    <center><p class="quote">„Tam, gdzie milkną imiona, a krew stygnie w ziemi, rodzi się siła, która nie zna litości.”</p></center>
+
+    <div class="info-block">
+      <p>
+        Larthi’usma była pierworodną córką rodu Kre’liyas - jedyną dziewczyną pośród siódemki dzieci i pierwszym światłem w oczach swoich rodziców. Zrodzona z woli wojskowego i dłoni zielarki, nosiła w sobie cechy obu - determinację ostrza i chłód spokoju. Już od najmłodszych lat mówiło się, że choć jej serce bije cicho, to bije twardo. Nie bawiła się z dziećmi, nie szukała śmiechu - zamiast tego znikała w lasach, zaszywając się pośród paproci i mgieł z księgą w dłoniach. Tam czytała, uczyła się, rozmawiała z ciszą, której nikt inny nie potrafił usłyszeć.
+      </p>
+
+      <p>
+        Ojciec, wojownik o dłoniach z kamienia i oczach stalowych, uczył ją sztuki miecza, a matka, zielarka o głosie łagodnym jak miód, wpajała jej cierpliwość ziół. Jedno podarowało jej siłę, drugie - chłodne myślenie. A ona, niczym ziarno wyrosłe z tych dwóch światów, stała się czymś więcej. Czymś pośrednim. Czymś... niezdefiniowanym.
+      </p>
+
+      <p>
+        Lecz dzieciństwo nie trwa wiecznie.
+      </p>
+      <p>
+        Miała zaledwie sześć zim, gdy świat, który znała, obrócił się w popiół. Siedząc jak zwykle wysoko na gałęzi dębu, z którego lubiła spoglądać na gwar wioski, ujrzała cień. Mężczyzna w czerni. Jego płaszcz gęsty jak dym, kroki ciężkie jak wyroki. Za nim - czerwony ślad. Martwi. Rozszarpani. I wtedy serce dziewczynki zatrzymało się w pół uderzenia.
+      </p>
+      <p>
+        Wtem ruszył ku jej domowi.
+      </p>
+      <p>
+        Zeskoczyła z drzewa, niemal łamiąc nogi, i pobiegła. W dłoniach zaciskała mały nóż - prezent od ojca. Droga, którą przemierzała, była przesiąknięta krwią. Ludzie uciekali, płakali, a ona widziała tylko jedno - ich dom. W płomieniach, w cieniu śmierci.
+      </p>
+      <p>
+        Dotarła za późno.
+      </p>
+      <p>
+        Jej dom był grobem. Ciała rodziny - ojca, matki, sześciu braci - leżały porozrzucane niczym kukły porzucone przez kapryśnego boga. Tylko miecz jej ojca pozostał nietknięty, oparty o ścianę, jakby czekał. Wzięła go. Usiadła na progu. I patrzyła.
+      </p>
+      <p>
+        Nie płakała.
+      </p>
+      <p>
+        Nie krzyczała.
+      </p>
+      <p>
+        Patrzyła.
+      </p>
+      <p>
+        Ludzie próbowali ją pocieszyć, ale ich słowa odbijały się od niej jak deszcz od skały. W ich oczach była tylko „biednym dzieckiem”. Ona zaś głaskała ostrze, które teraz było wszystkim, co miała. A może i czymś więcej - echem tego, co utracone.
+      </p>
+      <p>
+        Minęły godziny, nim przybyli wojskowi. W jej twarzy rozpoznali dziedzictwo ojca, jego szlachetny rys. Zabrali ją - szukając krewnych, ratunku, odpowiedzi. Ona nie jadła. Nie piła. Nie mówiła. Jedynie trzymała miecz. Jakby trzymała życie.
+      </p>
+      <p>
+        Po dniach poszukiwań odnaleziono jedną żywą duszę z rodu - starą kobietę, matkę jej ojca, o której nigdy nie słyszała. Mieszkała w odległej, skutej lodem krainie, gdzie słońce zjawia się rzadko, a cień jest stałym towarzyszem.
+      </p>
+        <p>
+            Zaledwie tydzień przed siódmymi urodzinami, Larthi’usma przybyła do niej.
+        </p>
+        <p>
+            Ta kobieta… nie była babką. Była skałą. Zimną, twardą, nienawistną. W jej oczach nie było czułości - tylko gniew i wspomnienie zdrady, której nigdy nie wyjaśniła. Traktowała Larthi’usmę jak cień, jak niewolnicę. Głodzona, przemarznięta, sypiająca na kartonie, dzień po dniu niknęła. W miesiąc straciła dziesięć kilogramów. Skóra jej zbielała jak śnieg, włosy straciły blask.
+        </p>
+        <p>
+            A jednak... nie narzekała. Bo nie czuła już nic.
+        </p>
+        <p>
+            W pewien chłodny wieczór, gdy wiatr tańczył na szklanych taflach okien, a światło świec drgało w rytm niespokojnych myśli, ona siedziała na zimnym parapecie i pisała wiersz. Atrament lał się jak krew z serca, a każde słowo było oddechem bólu, który nosiła w sobie od lat. I wtedy – jakby sam los chciał jej przypomnieć, że jeszcze potrafi czuć – ujrzała go.
+        </p>
+        <p>
+            Przechadzał się po zamarzniętym chodniku, chłopak w jej wieku, z oczami, które nie znały cierpienia, ale nosiły w sobie coś dziwnie znajomego. Kiedy spojrzała na niego, w jej piersi zapłonął nikły płomień – resztka nadziei, która nie zdążyła zgasnąć. Wyszła do niego. Ich rozmowa była nieśmiała, jak pierwszy powiew wiosny po zbyt długiej zimie.
+        </p>
+        <p>
+            Od tamtej chwili wszystko się zmieniło. Spędzali czas razem – najpierw ostrożnie, potem coraz częściej, aż w końcu nie było dnia bez jego obecności. Po raz pierwszy od tragedii, która ją złamała, czuła się kimś więcej niż cieniem. Uśmiech powracał na jej twarz niczym słońce po burzy, a serce uczyło się bić na nowo. Był jej światłem – jedynym, które mogła dostrzec zza krat przemocy i nienawiści. W domu czekała na nią jedynie babka – pijana, okrutna, rozdająca ciosy jak prezenty od losu. Ale on był jej schronieniem. Jej domem.
+        </p>
+        <p>
+            Przez dziesięć lat była jego cieniem, strażniczką snów, duszą splecioną z jego w nieopisanym porozumieniu. 
+        </p>
+        <p>
+            Aż do tamtego dnia.
+        </p>
+        <p>
+            Szóstego dnia miesiąca, w dzień jego szesnastych urodzin, postanowili udać się nad zamarznięte jezioro – miejsce, które znało ich śmiech i milczenie, sekrety i westchnienia. Tego dnia lodowa tafla błyszczała jak zwierciadło niebios, a oni tańczyli po niej jak dzieci marzeń. Śmiali się, splatali dłonie, zapomnieli o bólu i o czasie.
+        </p>
+        <p>
+            I wtedy - trzask.
+        </p>
+        <p>
+            Zimna szczelina rozdarła jezioro, a on zniknął pod powierzchnią jak cień porwany przez mrok. Przerażona rzuciła się, by go ratować, ale lód pękał dalej. Musiała pobiec po pomoc. I pobiegła - do jedynej osoby, która mogła pomóc... choć nigdy nie powinna.
+        </p>
+        <p>
+            Babka była pijana. Jak zwykle. Nie uwierzyła. Uderzyła. Cios był silny, ściana twarda, a światło zgasło.
+        </p>
+        <p>
+            Kiedy dziewczyna odzyskała przytomność, krew lepiła się do jej włosów, a świat drgał jak obraz za wodą. Babka spała, jakby nic się nie wydarzyło. A ona, ledwie trzymając się na nogach, wybiegła ponownie nad jezioro.
+        </p>
+        <p>
+            Znalazła jedynie dziurę w lodzie. Żadnego ciała. Żadnego śladu. Pytała ludzi. Krzyczała. Błagała. Ale nikt nic nie widział. Nikt nie wiedział. A potem - łzy. Pierwsze od lat. Łzy tak gorzkie, że aż gorętsze od ognia.
+        </p>
+        <p>
+            Wróciła do domu.
+        </p>
+        <p>
+            Tam, między rozbitymi wspomnieniami, spojrzała na miecz ojca. Bez słowa, bez drżenia w dłoni, zrobiła to, co powinna była zrobić dawno temu. Zabiła ją. Nie z gniewu. Nie z zemsty. Z chłodnej decyzji, jakby przecinała więzy z przeszłością. Krew popłynęła, ale coś innego również się wydarzyło.
+        </p>
+        <p>
+            Jej oczy... zapłonęły. Krwistoczerwonym blaskiem, jakby przebudzona w niej moc właśnie się narodziła. Gdy spojrzała w lustro, zobaczyła nie siebie. Zobaczyła istotę zrodzoną z bólu, krwi i cierpienia.
+        </p>
+        <p>
+            Ciało staruchy zniknęło. W jego miejscu - popiół. Gęsty, szary jak przeszłość. Schyliła się, zebrała go i wsypała do czerwonego woreczka, który własnoręcznie wyszyła w dzieciństwie. Zawiązała go na rękojeści miecza i przysięgła.
+        </p>
+        <p>
+            Przysięgła, że go odnajdzie. Że dowie się, co się z nim stało. A jeśli ktoś stoi między nią a prawdą - zginie. 
+        </p>
+        <p>
+            Przez następne pięć lat przemierzała ziemie. Od wiosek pokrytych śniegiem po miasta tętniące życiem, walczyła, uczyła się, zabijała. Cień, który z niej został, stawał się coraz silniejszy, coraz bardziej niebezpieczny. Lecz nie znalazła nic. Ani śladu. Ani imienia. Tylko milczenie.
+        </p>
+        <p>
+            Aż pewnego dnia, w jednym z większych miast, podszedł do niej mężczyzna. Miał oczy, które widziały wiele. Później okazał się wysłannikiem Akademii Ashikaga. Zaproponował jej walkę. Przyjęła bez słowa, jakby to był jedyny sposób, by dalej oddychać.
+        </p>
+        <p>
+            Walczyli długo. Gdy mężczyzna uśmiechnął się i opuścił broń, zaproponował jej coś więcej. Dołączenie do Akademii.
+        </p>
+        <p>
+            Początkowo odmówiła. Ale po chwili... skinęła głową.
+        </p>
+        <p>
+            Nie dla chwały. Nie dla wiedzy. Ale dlatego, że poczuła, iż tam może czekać odpowiedź. Może tam - wśród tajemniczych korytarzy i szeptów uczonych - odnajdzie ślad tej duszy, którą straciła. Tego, którego kochała.
+        </p>
+        <p>
+            Tego, którego nazwę nosiła ukrytą w sercu niczym zaklęcie.
+        </p>
+    </div>
+
+    <div class="back-button">
+      <a href="index.html">⟵ Powrót</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

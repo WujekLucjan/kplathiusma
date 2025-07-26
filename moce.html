@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Larthi’usma Kre’liyas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link id="favicon" rel="icon" href="img/moon_black.png" />
+</head>
+<canvas id="ashParticles" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:-1;"></canvas>
+<div id="rose-container"></div>
+<body>
+  <div class="moon-switcher">
+    <img src="img/moon_white.png" alt="Motyw biały" onclick="changeTheme('white')" />
+    <img src="img/moon_red.png" alt="Motyw czerwony" onclick="changeTheme('red')" />
+    <img src="img/moon_black.png" alt="Motyw czarny" onclick="changeTheme('black')" />
+  </div>
+
+  <div class="content-box">
+    <h1>Moce</h1>
+    <br>
+    <div class="info-block">
+      <h2>Moc Specjalna Broni:</h2>
+      <br>
+      <h3>„Miecz Zaklętej Róży”</h3>
+      <p>
+        W momencie, gdy kobieta zechce, ma możliwość aktywowania swej broni, a tym samym przemienienia jej w miecz.
+        Wygląda to następująco: w ciągu jednej tury, opaska rozpada się na płatki. Różane płatki, które zaczynają krążyć oraz wirować wokół kobiety, formując następnie miecz w jej dłoni.
+        Sam miecz nakłada na przeciwnika przy każdym ataku znamię popiołu (maks. 3 znaki na jednej istocie) – znaki te utrzymują się na stałe.
+        Co 5 tur dziewczyna może użyć tej mocy, aby rozproszyć wszystkie stacki zebrane na przeciwniku w zasięgu 6 metrów.
+        Każdy rozproszony stack osłabia przeciwnika o 5%, zmniejszając mu siłę, siłę ciosów oraz obronę na 3 tury.
+        Dodatkowo, dziewczyna zyskuje przy tym na 3 tury +10% do zwinności oraz siły ciosów.
+      </p>
+
+      <div class="image-container">
+        <img src="img/miecz.png" alt="Miecz Rosamorta" class="highlighted-img-owo" />
+      </div>
+      <br>
+      <br>
+      <h2>Moc podstawowa:</h2>
+      <h3><br>„Szept Ciernistego Ogrodu”</h3>
+      <p>
+        Postać w ciągu dwóch tur wypuszcza ze swego ciała niewidoczne dla oczu "płatki popiołu", które zawierają ślady dawnych róż.
+        Każdy płatek niesie wspomnienie i ciężar utraconych emocji.
+        Umiejętność ta działa na obszarze 30m (promień 15m względem kobiety).
+        Przeciwnicy, którzy wejdą na ten obszar i zostaną obsypani popiołem, czują nagłą, ostrą tęsknotę za bliską osobą oraz smutek.
+        Dodatkowo stają się wolniejsi o 10%.
+        Obrażenia zadane im w tym czasie zadają o połowę więcej niż normalnie.
+        Obsypanie utrzymuje się do 3 tur po wyjściu z pola lub zakończeniu działania umiejętności.
+        Sama umiejętność trwa 4 tury, a jej czas odnowienia wynosi 7 tur.
+      </p>
+      <br>
+      <br>
+      <h2>Specjalna moc postaci:</h2>
+      <br>
+      <h3>„Ogród Cierni i Ciszy”</h3>
+      <p>
+        Postać wytwarza wokół siebie, w promieniu 10 metrów, pole duchowej aury różanych cierni i popiołu, które oddziałuje na wszystkich wewnątrz, oprócz Larthi’usmy.
+        <br><br>
+        <strong>Efekty:</strong><br>
+        <strong>Czas działania:</strong> 3 tury<br>
+        <strong>Zasięg:</strong> aura 10 m wokół postaci<br>
+        <strong>Działanie:</strong>
+        <ul>
+          <li>Wróg wchodzący w aurę dostaje dezorientację – traci możliwość działania przez 1 turę.</li>
+          <li>Osoby z popiołowymi znakami otrzymują +15% obrażeń, a wartość tych dodatkowych obrażeń zamienia się w leczenie dla kobiety.</li>
+          <li>Aura może przyzywać iluzoryczne róże, które pną się po ziemi i krępują przeciwników w momencie wejścia (dezorientacja).</li>
+        </ul>
+        <strong>Czas odnowienia:</strong> 10 tur
+        <br><br>
+        <strong>Bonus estetyczny:</strong> Gdy aktywna jest specjalna moc, wokół postaci na moment „zakwita” czarna róża z popiołu, a powietrze pachnie kadzidłem i starym pergaminem.
+      </p>
+    </div>
+
+    <div class="back-button">
+      <a href="index.html">⟵ Powrót</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
